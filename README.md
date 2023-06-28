@@ -8,8 +8,8 @@ You need Visual Studio 2022 with the C++ stuff installed.
 
 You'll also need some dependencies. You should place them next to the Spectrum folder, such that you end up with a folder structure that looks like this:
 
-- HookHelpers
-- OpenLW
+- [HookHelpers](https://github.com/Radfordhound/HookHelpers)
+- [OpenLW](https://github.com/Radfordhound/OpenLW)
 - Spectrum
 
 Once you have all of that, you can just open Spectrum.sln in Visual Studio and hit "build".
