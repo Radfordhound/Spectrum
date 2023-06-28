@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{8c80b847-7d5d-4a30-bda4-af239b62351a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\Camera">
+      <UniqueIdentifier>{5e8037ff-9c10-431a-9b4f-49ce76a5ad0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\Player">
+      <UniqueIdentifier>{98b3d5a9-7100-424c-8e5a-80195e1c48df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\app\CMathUtility.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="src\app\Camera\BoostCameraPlugin.h">
+      <Filter>app\Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\pch.cpp" />
+    <ClCompile Include="src\app\CMathUtility.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Camera\BoostCameraPlugin.cpp">
+      <Filter>app\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Camera\Camera.cpp">
+      <Filter>app\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Camera\Player3DNormalCamera.cpp">
+      <Filter>app\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Player\StateSpinDashCharge.cpp">
+      <Filter>app\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
