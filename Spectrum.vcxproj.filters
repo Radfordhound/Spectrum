@@ -13,7 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\app\CMathUtility.h">
+    <ClInclude Include="src\app\MathUtility.h">
       <Filter>app</Filter>
     </ClInclude>
     <ClInclude Include="src\app\Camera\BoostCameraPlugin.h">
@@ -23,7 +23,7 @@
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\pch.cpp" />
-    <ClCompile Include="src\app\CMathUtility.cpp">
+    <ClCompile Include="src\app\MathUtility.cpp">
       <Filter>app</Filter>
     </ClCompile>
     <ClCompile Include="src\app\Camera\BoostCameraPlugin.cpp">

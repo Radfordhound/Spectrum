@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "CMathUtility.h"
+#include "MathUtility.h"
 #include <csl/math/vector3.h>
 
 using namespace csl::math;
