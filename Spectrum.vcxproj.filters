@@ -38,5 +38,8 @@
     <ClCompile Include="src\app\Player\StateSpinDashCharge.cpp">
       <Filter>app\Player</Filter>
     </ClCompile>
+    <ClCompile Include="src\app\Player\StateJump.cpp">
+      <Filter>app\Player</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -15,6 +15,7 @@
     <ClCompile Include="src\app\Camera\Camera.cpp" />
     <ClCompile Include="src\app\Camera\Player3DNormalCamera.cpp" />
     <ClCompile Include="src\app\MathUtility.cpp" />
+    <ClCompile Include="src\app\Player\StateJump.cpp" />
     <ClCompile Include="src\app\Player\StateSpinDashCharge.cpp" />
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\pch.cpp">
