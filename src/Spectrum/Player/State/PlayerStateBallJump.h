@@ -1,12 +1,16 @@
 #pragma once
-#include <Player/State/PlayerStateJump.h>
+#include "PlayerStateShortJumpCommon.h"
 
 namespace app
 {
 namespace Player
 {
-class CStateBallJump : public CStateJumpCommon
+class CSpectrumStateBallJump : public CSpectrumStateJumpCommon
 {
+    unsigned char field_0x28;
+    unsigned char field_0x29;
+    float field_0x2c;
+
 public:
     // Colors: TODO
     void OnEnter(CStateGOC& goc, int param_2);

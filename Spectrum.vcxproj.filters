@@ -20,6 +20,12 @@
     <ClInclude Include="src\Spectrum\Player\Base\PlayerState.h">
       <Filter>Player\Base</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateJumpCommon.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
@@ -53,6 +59,12 @@
     </ClCompile>
     <ClCompile Include="src\Spectrum\Player\Base\PlayerState.cpp">
       <Filter>Player\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateJumpCommon.cpp">
+      <Filter>Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.cpp">
+      <Filter>Player\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

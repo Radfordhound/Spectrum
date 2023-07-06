@@ -10,7 +10,7 @@ namespace app
 {
 namespace Player
 {
-void CStateBallJump::OnEnter(CStateGOC& goc, int param_2)
+void CSpectrumStateBallJump::OnEnter(CStateGOC& goc, int param_2)
 {
     // TODO
     goc.ChangePosture<CPostureAir>();
@@ -23,9 +23,15 @@ void CStateBallJump::OnEnter(CStateGOC& goc, int param_2)
 
     // TODO
 
+    field_0x2c = 0.0f;
+
+    // TODO
+
     StateUtil::PlaySE(goc, "sn_spin");
+    field_0x24 = 0.0f;
+    field_0x28 = 1;
 }
-void CStateBallJump::OnLeave(CStateGOC& goc, int param_2)
+void CSpectrumStateBallJump::OnLeave(CStateGOC& goc, int param_2)
 {
     // TODO
     StateUtil::EnableHoming(goc, false);
@@ -33,8 +39,10 @@ void CStateBallJump::OnLeave(CStateGOC& goc, int param_2)
     // TODO
 }
 
-bool CStateBallJump::Step(CStateGOC& goc, float dt)
+bool CSpectrumStateBallJump::Step(CStateGOC& goc, float dt)
 {
+    field_0x24 += dt;
+
     // TODO
 
     if (StateUtil::IsButtonUp(goc, game::INPUT_BUTTON_JUMP))
