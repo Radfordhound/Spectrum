@@ -1,6 +1,5 @@
 #pragma once
 #include <Player/State/PlayerStateJump.h>
-#include <Utility/StateDesc.h>
 
 namespace app
 {
@@ -9,8 +8,6 @@ namespace Player
 class CStateBallJump : public CStateJumpCommon
 {
 public:
-    static const ut::StateDesc<CStateGOC> StateDesc;
-
     // Colors: TODO
     void OnEnter(CStateGOC& goc, int param_2);
 

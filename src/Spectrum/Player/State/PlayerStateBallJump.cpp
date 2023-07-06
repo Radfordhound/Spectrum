@@ -10,9 +10,6 @@ namespace app
 {
 namespace Player
 {
-const ut::StateDesc<CStateGOC> CStateBallJump::StateDesc = ut::StateDesc<CStateGOC>(
-    "CStateBallJump", &ut::StateCreatorFuncTemplate<CStateBallJump>::Create, -1);
-
 void CStateBallJump::OnEnter(CStateGOC& goc, int param_2)
 {
     // TODO
@@ -56,27 +53,5 @@ bool CStateBallJump::Step(CStateGOC& goc, float dt)
 
     return false;
 }
-
-// TODO: Move this to another header!
-MEMBER_HOOK(LWAPI_ASLR(0x0085b620), CStateGOC,
-    CStateGOC_RegisterCommonStates_Hook, void)
-{
-    CallOriginal();
-
-    m_stateManager->RegisterState(0x83, &CStateBallJump::StateDesc);
-}
-
-static void CStateGOC_InstallHooks()
-{
-    // Overwrite max state size, so the game allocates enough memory for our extra states.
-    auto maxStateCountPtr = reinterpret_cast<std::uintptr_t*>(LWAPI_ASLR(0x0085c339));
-    UnprotectMemory(maxStateCountPtr, 1);
-    *maxStateCountPtr = 0x84;
-
-    // Install hooks.
-    InstallHook<CStateGOC_RegisterCommonStates_Hook>();
-}
-
-LWAPI_DEFINE_PATCH(CStateGOC_InstallHooks)
 } // Player
 } // app
