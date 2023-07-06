@@ -22,6 +22,9 @@
     <ClInclude Include="src\app\Player\PostureQuickStep.h">
       <Filter>app\Player</Filter>
     </ClInclude>
+    <ClInclude Include="src\app\Player\StateBallJump.h">
+      <Filter>app\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
@@ -48,6 +51,9 @@
       <Filter>app\Player</Filter>
     </ClCompile>
     <ClCompile Include="src\app\Player\StateJump.cpp">
+      <Filter>app\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Player\StateBallJump.cpp">
       <Filter>app\Player</Filter>
     </ClCompile>
   </ItemGroup>

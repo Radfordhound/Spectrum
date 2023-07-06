@@ -61,7 +61,6 @@ MEMBER_HOOK(LWAPI_ASLR(0x008ac8f0), CStateJumpExt,
     CStateGOC& goc, int param_2)
 {
     StateUtil::EnableHoming(goc, false);
-    StateUtil::SetDrawJumpBall(goc, false); // TODO: REMOVE THIS LINE!!!
 }
 
 MEMBER_HOOK(LWAPI_ASLR(0x008ac960), CStateJumpExt,
@@ -83,8 +82,8 @@ MEMBER_HOOK(LWAPI_ASLR(0x008ac960), CStateJumpExt,
         {
             // TODO
 
-            //StateUtil::SetDrawJumpBall(goc, true); // TODO: Replace this line with the following line
-            //goc.ChangeState(STATE_BALL_JUMP);
+            constexpr static int STATE_BALL_JUMP = 0x83; // TODO
+            goc.ChangeState(STATE_BALL_JUMP);
             return true;
         }
 
