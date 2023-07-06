@@ -19,6 +19,9 @@
     <ClInclude Include="src\app\Camera\BoostCameraPlugin.h">
       <Filter>app\Camera</Filter>
     </ClInclude>
+    <ClInclude Include="src\app\Player\PostureQuickStep.h">
+      <Filter>app\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
@@ -36,6 +39,12 @@
       <Filter>app\Camera</Filter>
     </ClCompile>
     <ClCompile Include="src\app\Player\StateSpinDashCharge.cpp">
+      <Filter>app\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Player\PostureQuickStep.cpp">
+      <Filter>app\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\app\Player\PostureMoveManager.cpp">
       <Filter>app\Player</Filter>
     </ClCompile>
     <ClCompile Include="src\app\Player\StateJump.cpp">
