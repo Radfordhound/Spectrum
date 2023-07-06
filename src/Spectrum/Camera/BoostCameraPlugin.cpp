@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "BoostCameraPlugin.h"
-#include "app/MathUtility.h"
+#include "Spectrum/Utility/MathUtility.h"
 #include <Camera/Camera.h>
 #include <System/UpdateInfo.h>
 #include <csl/math/algorithm.h>

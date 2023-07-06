@@ -1,60 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="app">
-      <UniqueIdentifier>{8c80b847-7d5d-4a30-bda4-af239b62351a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="app\Camera">
-      <UniqueIdentifier>{5e8037ff-9c10-431a-9b4f-49ce76a5ad0e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="app\Player">
-      <UniqueIdentifier>{98b3d5a9-7100-424c-8e5a-80195e1c48df}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\app\MathUtility.h">
-      <Filter>app</Filter>
+    <ClInclude Include="src\Spectrum\Camera\BoostCameraPlugin.h">
+      <Filter>Camera</Filter>
     </ClInclude>
-    <ClInclude Include="src\app\Camera\BoostCameraPlugin.h">
-      <Filter>app\Camera</Filter>
+    <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.h">
+      <Filter>Player\Posture</Filter>
     </ClInclude>
-    <ClInclude Include="src\app\Player\PostureQuickStep.h">
-      <Filter>app\Player</Filter>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateBallJump.h">
+      <Filter>Player\State</Filter>
     </ClInclude>
-    <ClInclude Include="src\app\Player\StateBallJump.h">
-      <Filter>app\Player</Filter>
+    <ClInclude Include="src\Spectrum\Utility\MathUtility.h">
+      <Filter>Utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\pch.cpp" />
-    <ClCompile Include="src\app\MathUtility.cpp">
-      <Filter>app</Filter>
+    <ClCompile Include="src\Spectrum\Camera\Controller\Player3DNormalCamera.cpp">
+      <Filter>Camera\Controller</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Camera\BoostCameraPlugin.cpp">
-      <Filter>app\Camera</Filter>
+    <ClCompile Include="src\Spectrum\Camera\BoostCameraPlugin.cpp">
+      <Filter>Camera</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Camera\Camera.cpp">
-      <Filter>app\Camera</Filter>
+    <ClCompile Include="src\Spectrum\Camera\Camera.cpp">
+      <Filter>Camera</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Camera\Player3DNormalCamera.cpp">
-      <Filter>app\Camera</Filter>
+    <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureMoveManager.cpp">
+      <Filter>Player\Posture</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Player\StateSpinDashCharge.cpp">
-      <Filter>app\Player</Filter>
+    <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.cpp">
+      <Filter>Player\Posture</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Player\PostureQuickStep.cpp">
-      <Filter>app\Player</Filter>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateBallJump.cpp">
+      <Filter>Player\State</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Player\PostureMoveManager.cpp">
-      <Filter>app\Player</Filter>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateJump.cpp">
+      <Filter>Player\State</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Player\StateJump.cpp">
-      <Filter>app\Player</Filter>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateSpinDashCharge.cpp">
+      <Filter>Player\State</Filter>
     </ClCompile>
-    <ClCompile Include="src\app\Player\StateBallJump.cpp">
-      <Filter>app\Player</Filter>
+    <ClCompile Include="src\Spectrum\Utility\MathUtility.cpp">
+      <Filter>Utility</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{56c0589b-eaac-4b63-9eb5-bdafa9d7f5ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{8e4ac6e2-8882-4afa-8342-eb70ae97a66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{0f9c8bcb-72f6-4c0a-8a30-c6967dbde330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera\Controller">
+      <UniqueIdentifier>{12b5d872-2430-4a3c-99d9-6de8e12e1537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\State">
+      <UniqueIdentifier>{0e1fa6ee-2c71-4f97-9eb7-a8c56d9fc8b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Posture">
+      <UniqueIdentifier>{58577ae4-f7a0-46ca-9d15-4ab2807b316a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

@@ -11,27 +11,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\app\Camera\BoostCameraPlugin.cpp" />
-    <ClCompile Include="src\app\Camera\Camera.cpp" />
-    <ClCompile Include="src\app\Camera\Player3DNormalCamera.cpp" />
-    <ClCompile Include="src\app\MathUtility.cpp" />
-    <ClCompile Include="src\app\Player\PostureMoveManager.cpp" />
-    <ClCompile Include="src\app\Player\PostureQuickStep.cpp" />
-    <ClCompile Include="src\app\Player\StateBallJump.cpp" />
-    <ClCompile Include="src\app\Player\StateJump.cpp" />
-    <ClCompile Include="src\app\Player\StateSpinDashCharge.cpp" />
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\Spectrum\Camera\BoostCameraPlugin.cpp" />
+    <ClCompile Include="src\Spectrum\Camera\Camera.cpp" />
+    <ClCompile Include="src\Spectrum\Camera\Controller\Player3DNormalCamera.cpp" />
+    <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureMoveManager.cpp" />
+    <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateBallJump.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateJump.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateSpinDashCharge.cpp" />
+    <ClCompile Include="src\Spectrum\Utility\MathUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\app\Camera\BoostCameraPlugin.h" />
-    <ClInclude Include="src\app\MathUtility.h" />
-    <ClInclude Include="src\app\Player\PostureQuickStep.h" />
-    <ClInclude Include="src\app\Player\StateBallJump.h" />
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\Spectrum\Camera\BoostCameraPlugin.h" />
+    <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateBallJump.h" />
+    <ClInclude Include="src\Spectrum\Utility\MathUtility.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenLW\LWAPI\LWAPI.vcxproj">

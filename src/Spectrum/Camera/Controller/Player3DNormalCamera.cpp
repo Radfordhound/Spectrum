@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "BoostCameraPlugin.h"
+#include "Spectrum/Camera/BoostCameraPlugin.h"
 #include <Camera/Controller/Player3DNormalCamera.h>
 
 namespace app
