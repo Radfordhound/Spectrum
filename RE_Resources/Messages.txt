@@ -1,5 +1,29 @@
 ==========================================
+MessageUnknown                      0x4000
+==========================================
+
+TODO
+
+MsgDamage                           0x4002
+MsgDamageSuccess                    0x4003
+
+TODO
+
+==========================================
 MessagePlayer                       0x5000
 ==========================================
 
+MsgDebugWarp                        0x506b
+MsgPLCheckPhantomStart              0x508c
 MsgPLSetStatusForSpinPosture        0x508e
+MsgIsWaterOutJump                   0x5093
+
+==========================================
+MessageUnknown                      0x8000
+==========================================
+
+TODO
+
+MsgSetDebugCamera                   0x8003
+
+TODO

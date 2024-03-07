@@ -1,4 +1,15 @@
 ==========================================
+MessageUnknown                      0x4000
+==========================================
+
+TODO
+
+MsgDamage                           0x4002
+MsgDamageSuccess                    0x4003
+
+TODO
+
+==========================================
 MessagePlayer                       0x5000
 ==========================================
 
@@ -144,8 +155,8 @@ MsgPLSetupReactionPlate             0x5086
 MsgPLSetPostureNoPathMove           0x5087
 MsgPLPostureSetPluginForcePath      0x5088
 MsgPLPostureSetRotateForceScale     0x5089
-MsgPLPostureSetDashParameterCustom  0x508C
 MsgPLPostureSetDashParameter        0x508B
+MsgPLPostureSetDashParameterCustom  0x508C
 MsgPLGetDashModeIsCurveCorrect      0x508D
 MsgPLPostureQuickStep               0x508E
 MsgPLQuickStepRevertVelocity        0x508F
@@ -161,3 +172,13 @@ MsgGetJumpOffsetParameter           0x5099
 MsgIsWaterOutJump                   0x509A
 MsgFallDownWater                    0x509B
 MsgMultiEnableFrameIn               0x509C
+
+==========================================
+MessageUnknown                      0x8000
+==========================================
+
+TODO
+
+MsgSetDebugCamera                   0x8003
+
+TODO
