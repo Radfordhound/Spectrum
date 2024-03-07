@@ -26,6 +26,9 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h">
       <Filter>Player\State</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\Base\PlayerPhantom.h">
+      <Filter>Player\Base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />

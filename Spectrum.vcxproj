@@ -32,6 +32,7 @@
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\Spectrum\Camera\BoostCameraPlugin.h" />
+    <ClInclude Include="src\Spectrum\Player\Base\PlayerPhantom.h" />
     <ClInclude Include="src\Spectrum\Player\Base\PlayerState.h" />
     <ClInclude Include="src\Spectrum\Player\Base\PlayerState.inl" />
     <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.h" />
