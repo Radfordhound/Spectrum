@@ -26,6 +26,9 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h">
       <Filter>Player\State</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtilJump.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
     <ClInclude Include="src\Spectrum\Player\Parameter\PlayerParameter.h">
       <Filter>Player\Parameter</Filter>
     </ClInclude>
@@ -70,6 +73,9 @@
       <Filter>Player\State</Filter>
     </ClCompile>
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.cpp">
+      <Filter>Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtilJump.cpp">
       <Filter>Player\State</Filter>
     </ClCompile>
   </ItemGroup>

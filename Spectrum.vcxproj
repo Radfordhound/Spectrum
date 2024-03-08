@@ -27,6 +27,7 @@
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateJumpCommon.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateSpinDashCharge.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtilJump.cpp" />
     <ClCompile Include="src\Spectrum\Utility\MathUtility.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -40,6 +41,7 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateBallJump.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateJumpCommon.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtilJump.h" />
     <ClInclude Include="src\Spectrum\Utility\MathUtility.h" />
   </ItemGroup>
   <ItemGroup>
