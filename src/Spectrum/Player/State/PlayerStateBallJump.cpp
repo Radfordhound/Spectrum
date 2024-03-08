@@ -25,6 +25,7 @@ void CSpectrumStateBallJump::OnEnter(CStateGOC& goc, int param_2)
 
     // TODO
 
+    field_0x29_spectrum = true; // TODO!
     field_0x2c_spectrum = 0.0f;
 
     // TODO
@@ -64,7 +65,7 @@ bool CSpectrumStateBallJump::Step(CStateGOC& goc, float dt)
         }
     }
 
-    return false;
+    return true;
 }
 
 void CSpectrumStateBallJump::FUN_80098500(CStateGOC& goc, float dt)
