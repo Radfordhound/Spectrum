@@ -26,6 +26,9 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h">
       <Filter>Player\State</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\Parameter\PlayerParameter.h">
+      <Filter>Player\Parameter</Filter>
+    </ClInclude>
     <ClInclude Include="src\Spectrum\Player\Base\PlayerPhantom.h">
       <Filter>Player\Base</Filter>
     </ClInclude>
@@ -91,6 +94,9 @@
     </Filter>
     <Filter Include="Player\Base">
       <UniqueIdentifier>{042919d4-17f2-42e0-93b0-f499bfb64cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Parameter">
+      <UniqueIdentifier>{458ffdd3-3a3e-4394-b23c-04225746ae8a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
