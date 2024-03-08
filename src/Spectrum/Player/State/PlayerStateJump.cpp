@@ -72,8 +72,7 @@ bool CSpectrumStateJump::Step(CStateGOC& goc, float dt)
         break;
     }
 
-    FUN_80097790(goc, true, false); // TODO: Do we return this?
-    return true;
+    return CheckChangeState(goc, true, false);
 }
 } // Player
 } // app

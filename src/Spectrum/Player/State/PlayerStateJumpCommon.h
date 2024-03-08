@@ -9,7 +9,7 @@ class CSpectrumStateJumpCommon : public CStateSonicBase
 {
 public:
     // Colors: 0x80097790
-    virtual bool FUN_80097790(CStateGOC& goc, bool param_2, bool param_3);
+    virtual bool CheckChangeState(CStateGOC& goc, bool allowDoubleJump, bool param_3);
 };
 } // Player
 } // app

@@ -33,6 +33,7 @@ void CSpectrumStateBallJump::OnEnter(CStateGOC& goc, int param_2)
     field_0x24_spectrum = 0.0f;
     field_0x28_spectrum = 1;
 }
+
 void CSpectrumStateBallJump::OnLeave(CStateGOC& goc, int param_2)
 {
     // TODO
@@ -49,7 +50,8 @@ bool CSpectrumStateBallJump::Step(CStateGOC& goc, float dt)
 
     FUN_80098500(goc, dt);
 
-    if (!FUN_80097790(goc, field_0x29_spectrum, false) && StateUtil::IsButtonUp(goc, game::INPUT_BUTTON_JUMP))
+    if (!CheckChangeState(goc, field_0x29_spectrum, false) &&
+        StateUtil::IsButtonUp(goc, game::INPUT_BUTTON_JUMP))
     {
         const auto physics = goc.GetPhysics();
         const auto& velocity = physics->GetVelocity();

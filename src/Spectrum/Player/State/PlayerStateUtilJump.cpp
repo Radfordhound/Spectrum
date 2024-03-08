@@ -10,7 +10,7 @@ namespace Player
 {
 namespace StateUtil
 {
-int FUN_80091540(CStateGOC& goc, int param_2)
+int GetRequestStateForAir(CStateGOC& goc, int param_2)
 {
     switch (param_2)
     {
@@ -27,15 +27,13 @@ int FUN_80091540(CStateGOC& goc, int param_2)
 
 int FUN_8009157c(CStateGOC& goc)
 {
-    if (goc.IsOnGround())
-    {
-        // TODO
-        return -1;
-    }
-    else
+    if (!goc.IsOnGround())
     {
         return PLAYER_STATE_FALL;
     }
+
+    // TODO
+    return -1;
 }
 
 int FUN_800916a4(CStateGOC& goc)
@@ -65,6 +63,12 @@ int FUN_800916a4(CStateGOC& goc)
         // TODO
         return -1;
     }
+}
+
+bool CheckChangeWallJump(CStateGOC& goc)
+{
+    // TODO
+    return false;
 }
 } // StateUtil
 } // Player

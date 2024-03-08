@@ -1,24 +1,40 @@
 #include "pch.h"
 #include "PlayerStateJumpCommon.h"
 #include "PlayerStateUtilJump.h"
+#include "Spectrum/Player/Base/PlayerState.h"
+#include <Player/State/PlayerStateUtil.h>
 
 namespace app
 {
 namespace Player
 {
-bool CSpectrumStateJumpCommon::FUN_80097790(CStateGOC& goc, bool param_2, bool param_3)
+bool CSpectrumStateJumpCommon::CheckChangeState(CStateGOC& goc, bool allowDoubleJump, bool param_3)
 {
-    const auto nextState = StateUtil::FUN_80091540(goc, 1);
+    const auto nextState = StateUtil::GetRequestStateForAir(goc, 1);
     if (nextState == -1)
     {
-        // TODO
-        return false;
+        if (!StateUtil::CheckChangeWallJump(goc))
+        {
+            if (!allowDoubleJump || !StateUtil::IsEnableDoubleJump(goc, false))
+            {
+                return false;
+            }
+            else if (param_3)
+            {
+                goc.ChangeStateAlways(PLAYER_STATE_DOUBLE_JUMP);
+            }
+            else
+            {
+                goc.ChangeState(PLAYER_STATE_DOUBLE_JUMP);
+            }
+        }
     }
     else
     {
         goc.ChangeState(nextState);
-        return true;
     }
+
+    return true;
 }
 } // Player
 } // app
