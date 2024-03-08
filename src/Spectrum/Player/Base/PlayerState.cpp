@@ -2,6 +2,7 @@
 #include "PlayerState.h"
 #include "Spectrum/Player/State/PlayerStateJump.h"
 #include "Spectrum/Player/State/PlayerStateBallJump.h"
+#include "Spectrum/Player/State/PlayerStatePhantomPuzzleStart.h"
 #include <Player/Base/PlayerState.h>
 #include <Utility/StateManager.h>
 

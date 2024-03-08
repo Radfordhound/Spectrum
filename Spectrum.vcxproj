@@ -25,6 +25,9 @@
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateBallJump.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateJump.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateJumpCommon.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStatePhantomCommon.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleRoot.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleStart.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateSpinDashCharge.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtilJump.cpp" />
@@ -41,6 +44,9 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateBallJump.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateJump.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateJumpCommon.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomCommon.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleRoot.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleStart.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtilJump.h" />
     <ClInclude Include="src\Spectrum\Utility\MathUtility.h" />

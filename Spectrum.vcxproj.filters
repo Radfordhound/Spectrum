@@ -35,8 +35,17 @@
     <ClInclude Include="src\Spectrum\Player\Parameter\PlayerParameter.h">
       <Filter>Player\Parameter</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomCommon.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
     <ClInclude Include="src\Spectrum\Player\Base\PlayerPhantom.h">
       <Filter>Player\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleStart.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleRoot.h">
+      <Filter>Player\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +88,15 @@
       <Filter>Player\State</Filter>
     </ClCompile>
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtilJump.cpp">
+      <Filter>Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStatePhantomCommon.cpp">
+      <Filter>Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleStart.cpp">
+      <Filter>Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleRoot.cpp">
       <Filter>Player\State</Filter>
     </ClCompile>
   </ItemGroup>
