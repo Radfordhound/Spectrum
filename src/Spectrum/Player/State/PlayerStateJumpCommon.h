@@ -7,8 +7,9 @@ namespace Player
 {
 class CSpectrumStateJumpCommon : public CStateSonicBase
 {
-protected:
-    float field_0x24;
+public:
+    // Colors: 0x80097790
+    virtual bool FUN_80097790(CStateGOC& goc, bool param_2, bool param_3);
 };
 } // Player
 } // app

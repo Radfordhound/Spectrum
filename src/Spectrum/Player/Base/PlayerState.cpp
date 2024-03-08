@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "PlayerState.h"
+#include "Spectrum/Player/State/PlayerStateJump.h"
 #include "Spectrum/Player/State/PlayerStateBallJump.h"
 #include <Player/Base/PlayerState.h>
 #include <Utility/StateManager.h>
@@ -22,6 +23,13 @@ static constexpr int NewStateCount = static_cast<int>(sizeof(NewStates) / sizeof
 MEMBER_HOOK(LWAPI_ASLR(0x0085b620), CStateGOC,
     CStateGOC_RegisterCommonStates_Hook, void)
 {
+    // Replace some of the original Lost World player states.
+    using StateCreatorFunc = ut::StateDesc<CStateGOC>::StateCreatorFunc;
+
+    auto& stateJumpCreator = *reinterpret_cast<StateCreatorFunc*>(LWAPI_ASLR(0x00fef6e4));
+    UnprotectMemory(stateJumpCreator);
+    stateJumpCreator = &ut::StateCreatorFuncTemplate<CSpectrumStateJump>::Create;
+
     // Call original function to register Lost World player states.
     CallOriginal();
 

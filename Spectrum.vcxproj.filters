@@ -26,6 +26,9 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h">
       <Filter>Player\State</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateJump.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtilJump.h">
       <Filter>Player\State</Filter>
     </ClInclude>

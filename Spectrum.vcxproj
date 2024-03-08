@@ -39,6 +39,7 @@
     <ClInclude Include="src\Spectrum\Player\Parameter\PlayerParameter.h" />
     <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateBallJump.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateJump.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateJumpCommon.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtilJump.h" />
