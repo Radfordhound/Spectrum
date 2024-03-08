@@ -3,13 +3,6 @@
 // Called by LostCodeLoader at game initialization time.
 extern "C" __declspec(dllexport) void Init(const char* path)
 {
-    // Pop up a message box giving us time to start the VS debugger and attach to the process.
-#ifndef NDEBUG
-    MessageBoxA(nullptr,
-        "To debug this mod, please start the Visual Studio debugger, then press OK.",
-        "Spectrum", MB_OK);
-#endif
-
     // Apply all defined patches from all of Spectrum's source files.
     lwapi::ApplyPatches();
 }
