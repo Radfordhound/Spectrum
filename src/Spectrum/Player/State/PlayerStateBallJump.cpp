@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "PlayerStateBallJump.h"
+#include "Spectrum/Player/Base/PlayerState.h"
 #include <Player/Posture/PlayerPostureAir.h>
 #include <Player/State/PlayerStateUtil.h>
 #include <Player/State/PlayerStateUtilSound.h>
@@ -54,8 +55,7 @@ bool CSpectrumStateBallJump::Step(CStateGOC& goc, float dt)
         if (fVar10 < -100.0f || (fVar10 < 0.0f && 1.5f < field_0x28))
         {
             // TODO
-            constexpr static int STATE_FALL = 0x12; // TODO
-            goc.ChangeState(STATE_FALL);
+            goc.ChangeState(PLAYER_STATE_FALL);
         }
     }
 

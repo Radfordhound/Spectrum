@@ -28,16 +28,16 @@ MEMBER_HOOK(LWAPI_ASLR(0x0085b620), CStateGOC,
     // Register new Spectrum player states.
     for (int i = 0; i < NewStateCount; ++i)
     {
-        m_stateManager->RegisterState(SPECTRUM_FIRST_NEW_PLAYER_STATE_ID + i, NewStates + i);
+        m_stateManager->RegisterState((SPECTRUM_LAST_VANILLA_STATE_ID + 1) + i, NewStates + i);
     }
 }
 
 static void CStateGOC_InstallHooks()
 {
     // Overwrite max state size, so the game allocates enough memory for our extra states.
-    auto maxStateCountPtr = reinterpret_cast<unsigned char*>(LWAPI_ASLR(0x0085c339));
-    UnprotectMemory(maxStateCountPtr, 1);
-    *maxStateCountPtr = SPECTRUM_TOTAL_PLAYER_STATE_COUNT;
+    auto& maxStateCount = *reinterpret_cast<unsigned char*>(LWAPI_ASLR(0x0085c339));
+    UnprotectMemory(maxStateCount);
+    maxStateCount = SPECTRUM_TOTAL_PLAYER_STATE_COUNT;
 
     // Install hooks.
     InstallHook<CStateGOC_RegisterCommonStates_Hook>();

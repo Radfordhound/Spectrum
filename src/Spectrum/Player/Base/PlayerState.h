@@ -6,7 +6,11 @@ namespace Player
 {
 enum ESpectrumStateType
 {
-    SPECTRUM_FIRST_NEW_PLAYER_STATE_ID = 0x83,
+    PLAYER_STATE_STAND_ROOT = 0x1, // TODO
+    PLAYER_STATE_RUN = 0x3, // TODO
+    PLAYER_STATE_FALL = 0x12, // TODO
+
+    SPECTRUM_LAST_VANILLA_STATE_ID = 0x82,
 
 #define SPECTRUM_PLAYER_STATE_AUTOGEN(className, enumTypeName) enumTypeName,
 #include "PlayerState.inl"

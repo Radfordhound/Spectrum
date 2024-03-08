@@ -1,5 +1,6 @@
 #include "pch.h"
 #include <Player/State/PlayerStateJump.h>
+#include "Spectrum/Player/Base/PlayerState.h"
 #include <Player/Posture/PlayerPostureAir.h>
 #include <Player/State/PlayerStateUtil.h>
 #include <Player/State/PlayerStateUtilSound.h>
@@ -82,8 +83,7 @@ MEMBER_HOOK(LWAPI_ASLR(0x008ac960), CStateJumpExt,
         {
             // TODO
 
-            constexpr static int STATE_BALL_JUMP = 0x83; // TODO
-            goc.ChangeState(STATE_BALL_JUMP);
+            goc.ChangeState(SPECTRUM_PLAYER_STATE_BALL_JUMP);
             return true;
         }
 
