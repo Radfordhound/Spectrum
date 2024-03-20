@@ -41,7 +41,7 @@ bool CSpectrumStateJump::Step(CStateGOC& goc, float dt)
     case 0:
         if (StateUtil::IsButtonUp(goc, game::INPUT_BUTTON_JUMP))
         {
-            // TODO
+            FUN_80097a04(goc);
             GotoSeq(1);
         }
         else if (SPECTRUM_PLAYER_PARAMETER_JUMP_BALL_TIMER <= m_ballJumpTimer)

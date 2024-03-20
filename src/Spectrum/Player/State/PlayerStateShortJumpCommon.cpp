@@ -8,6 +8,17 @@ namespace app
 {
 namespace Player
 {
+bool CSpectrumStateShortJumpCommon::FUN_80097a04(CStateGOC& goc)
+{
+    //if (field_0x24_spectrum.SquareMag() <= 1.0E-6f)
+    //{
+        // TODO
+    //}
+
+    // TODO
+    return false;
+}
+
 void CSpectrumStateShortJumpCommon::DoJump(CStateGOC& goc)
 {
     const auto physics = goc.GetPhysics();

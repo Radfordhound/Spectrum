@@ -22,6 +22,7 @@ void CSpectrumStateBallJump::OnEnter(CStateGOC& goc, int param_2)
 
     StateUtil::EnableHoming(goc, true);
     StateUtil::SetDrawJumpBall(goc, true);
+    goc.ChangeBodyCollision(BODY_COLLISION_TYPE_BALL);
 
     // TODO
 
@@ -41,6 +42,7 @@ void CSpectrumStateBallJump::OnLeave(CStateGOC& goc, int param_2)
     StateUtil::EnableHoming(goc, false);
     StateUtil::SetDrawJumpBall(goc, false);
     // TODO
+    goc.ChangeBodyCollision(BODY_COLLISION_TYPE_NORMAL);
 }
 
 bool CSpectrumStateBallJump::Step(CStateGOC& goc, float dt)
