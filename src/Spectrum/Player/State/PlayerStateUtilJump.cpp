@@ -21,7 +21,7 @@ int GetRequestStateForAir(CStateGOC& goc, int param_2)
         return FUN_800916a4(goc);
 
     default:
-        return -1;
+        return PLAYER_STATE_NONE;
     }
 }
 
@@ -32,8 +32,13 @@ int FUN_8009157c(CStateGOC& goc)
         return PLAYER_STATE_FALL;
     }
 
+    if (goc.IsOutOfControl())
+    {
+        return PLAYER_STATE_NONE;
+    }
+
     // TODO
-    return -1;
+    return PLAYER_STATE_NONE;
 }
 
 int FUN_800916a4(CStateGOC& goc)
