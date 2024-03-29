@@ -13,7 +13,18 @@ TODO
 MessagePlayer                       0x5000
 ==========================================
 
+MsgPLGetRotation                    0x5000
+MsgPLGetGravity                     0x5001
+MsgPLNotifyDying                    0x5002
+MsgPLNotifyDead                     0x5003
+MsgPLGetHomingTargetInfo            0x5004
+MsgPLReqestChangeState              0x5066
+MsgSetPathController                0x506a
+MsgGetHomingSearchPos               0x506a
 MsgDebugWarp                        0x506b
+MsgPLSetupTrickJump                 0x507e
+MsgPLPostureSetPluginForcePath      0x5081
+MsgPLSetupChangeDimension           0x508a
 MsgPLCheckPhantomStart              0x508c
 MsgPLSetStatusForSpinPosture        0x508e
 MsgIsWaterOutJump                   0x5093
@@ -25,5 +36,19 @@ MessageUnknown                      0x8000
 TODO
 
 MsgSetDebugCamera                   0x8003
+
+TODO
+
+MsgChangePlayerCamera               0x8008
+
+TODO
+
+==========================================
+MessageUnknown                      0xC000
+==========================================
+
+TODO
+
+MsgHudLockonCursorFinish            0xC006
 
 TODO

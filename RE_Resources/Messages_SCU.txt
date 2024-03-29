@@ -182,3 +182,17 @@ TODO
 MsgSetDebugCamera                   0x8003
 
 TODO
+
+MsgChangePlayerCamera               0x8008
+
+TODO
+
+==========================================
+MessageUnknown                      0xC000
+==========================================
+
+TODO
+
+MsgHudLockonCursorFinish            0xC008
+
+TODO
