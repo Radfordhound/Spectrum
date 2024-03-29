@@ -59,7 +59,7 @@ bool CSpectrumStateBallJump::Step(CStateGOC& goc, float dt)
         const auto physics = goc.GetPhysics();
         const auto& velocity = physics->GetVelocity();
 
-        const auto fVar10 = DirectX::XMVectorGetX(DirectX::XMVector3Dot(velocity.Data, physics->m_upDir.Data)); // TODO
+        const auto fVar10 = DirectX::XMVectorGetX(DirectX::XMVector3Dot(velocity.Data, physics->upDir.Data)); // TODO
         if (fVar10 < -100.0f || (fVar10 < 0.0f && 1.5f < field_0x28))
         {
             // TODO
@@ -95,7 +95,7 @@ void CSpectrumStateBallJump::FUN_80098500(CStateGOC& goc, float dt)
 void CSpectrumStateBallJump::FUN_800985a8(CStateGOC& goc, float dt)
 {
     const auto physics = goc.GetPhysics();
-    auto aVStack48 = physics->CalcUpDirectionByVelocity(physics->m_upDir);
+    auto aVStack48 = physics->CalcUpDirectionByVelocity(physics->upDir);
     auto VStack72 = ((aVStack48 * SPECTRUM_PLAYER_PARAMETER_JUMP_HOLD) * dt);
     physics->AddVelocity(VStack72);
 }

@@ -26,7 +26,7 @@ void CSpectrumStateShortJumpCommon::DoJump(CStateGOC& goc)
     const auto val1 = SPECTRUM_PLAYER_PARAMETER_JUMP_INITIAL;
 
     // TODO
-    auto aVStack44 = physics->CalcUpDirectionByVelocity(physics->m_upDir);
+    auto aVStack44 = physics->CalcUpDirectionByVelocity(physics->upDir);
     physics->UpdateGravity(aVStack44, true);
     const auto VStack56 = (aVStack44 * val1);
     physics->AddVelocity(VStack56);

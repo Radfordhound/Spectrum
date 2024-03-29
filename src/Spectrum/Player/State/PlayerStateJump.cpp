@@ -57,9 +57,8 @@ bool CSpectrumStateJump::Step(CStateGOC& goc, float dt)
     case 1:
     {
         const auto& velocity = physics->GetVelocity();
-        const auto fVar8 = DirectX::XMVectorGetX(DirectX::XMVector3Dot(physics->m_upDir.Data, velocity.Data)); // TODO
 
-        if (fVar8 < 80.0f)
+        if (csl::math::Vector3Dot(physics->upDir, velocity) < 80.0f)
         {
             goc.PushAnimation("JUMP_TOP");
             GotoSeq(2);

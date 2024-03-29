@@ -82,7 +82,7 @@ void CPosture3DAir::UpdateInternalForce(CPhysics& physics, float deltaTime)
         {
             const auto surfaceInfo = collisionGOC->collision.GetSurfaceInfo(i);
 
-            if (csl::math::Vector3Dot(physics.m_upDir, surfaceInfo->field_0x0) <=
+            if (csl::math::Vector3Dot(physics.upDir, surfaceInfo->field_0x0) <=
                 std::cosf(DEG_TO_RADF(70.0f)))
             {
                 const auto VStack96 = surfaceInfo->field_0x0;
