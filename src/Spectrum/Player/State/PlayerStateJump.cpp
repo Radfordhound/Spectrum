@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "PlayerStateJump.h"
+#include "PlayerStateUtil.h"
 #include "Spectrum/Player/Parameter/PlayerParameter.h"
 #include "Spectrum/Player/Base/PlayerState.h"
 #include <Player/Posture/PlayerPostureAir.h>
@@ -14,7 +15,7 @@ namespace Player
 {
 void CSpectrumStateJump::OnEnter(CStateGOC& goc, int param_2)
 {
-    // TODO
+    StateUtil::SpectrumRequestWaterGravityChange(goc);
     goc.ChangePosture<CPostureAir>();
     goc.ChangeAnimation("JUMP_START", 0.2f);
     StateUtil::EnableHoming(goc, true);

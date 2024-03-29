@@ -50,6 +50,9 @@
     <ClInclude Include="src\Spectrum\Player\Posture\PlayerPosture3DAir.h">
       <Filter>Player\Posture</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtil.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
@@ -104,6 +107,9 @@
     </ClCompile>
     <ClCompile Include="src\Spectrum\Player\Posture\PlayerPosture3DAir.cpp">
       <Filter>Player\Posture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtil.cpp">
+      <Filter>Player\State</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

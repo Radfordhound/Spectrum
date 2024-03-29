@@ -31,6 +31,7 @@
     <ClCompile Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleStart.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateSpinDashCharge.cpp" />
+    <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtil.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtilJump.cpp" />
     <ClCompile Include="src\Spectrum\Utility\MathUtility.cpp" />
   </ItemGroup>
@@ -50,6 +51,7 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleRoot.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomPuzzleStart.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateShortJumpCommon.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtil.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtilJump.h" />
     <ClInclude Include="src\Spectrum\Utility\MathUtility.h" />
   </ItemGroup>
