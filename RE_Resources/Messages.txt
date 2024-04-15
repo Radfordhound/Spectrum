@@ -1,4 +1,26 @@
 ==========================================
+MessageUnknown                      0x2000
+==========================================
+
+MsgGetPosition                      0x2000
+
+TODO
+
+MsgGetVelocity                      0x2004
+
+TODO
+
+==========================================
+MessageUnknown                      0x3000
+==========================================
+
+TODO
+
+MsgGoal                             0x300a
+
+TODO
+
+==========================================
 MessageUnknown                      0x4000
 ==========================================
 
@@ -6,6 +28,11 @@ TODO
 
 MsgDamage                           0x4002
 MsgDamageSuccess                    0x4003
+
+TODO
+
+MsgDeactivate                       0x4005
+MsgScore                            0x4006
 
 TODO
 
@@ -18,6 +45,14 @@ MsgPLGetGravity                     0x5001
 MsgPLNotifyDying                    0x5002
 MsgPLNotifyDead                     0x5003
 MsgPLGetHomingTargetInfo            0x5004
+MsgIsBoost                          0x5011
+MsgPLGetPhantomType                 0x5018
+MsgPLIsHoming                       0x501f
+MsgPLGetPathInfo                    0x5025
+MsgPLGetCinfo                       0x5030
+MsgPLIsDead                         0x5053
+MsgPLOnDisablePhantom               0x5056
+MsgPLVibration                      0x505b
 MsgPLReqestChangeState              0x5066
 MsgSetPathController                0x506a
 MsgGetHomingSearchPos               0x506a
@@ -30,12 +65,41 @@ MsgPLSetStatusForSpinPosture        0x508e
 MsgIsWaterOutJump                   0x5093
 
 ==========================================
+MessageUnknown                      0x6000
+==========================================
+
+TODO
+
+MsgTakeObject                       0x6005
+
+TODO
+
+==========================================
+MessageUnknown                      0x7000
+TODO: MessageEnemy ??
+==========================================
+
+TODO
+
+MsgEnemyShotKill                    0x7002
+
+TODO
+
+MsgFerrisWheelNotifyRotateGondola   0x70A0
+
+TODO
+
+==========================================
 MessageUnknown                      0x8000
 ==========================================
 
 TODO
 
 MsgSetDebugCamera                   0x8003
+
+TODO
+
+MsgPushCameraController             0x8005
 
 TODO
 
@@ -49,6 +113,7 @@ MessageUnknown                      0xC000
 
 TODO
 
+MsgHudLockonCursorUpdate            0xC005
 MsgHudLockonCursorFinish            0xC006
 
 TODO

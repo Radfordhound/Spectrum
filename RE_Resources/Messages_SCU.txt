@@ -1,4 +1,26 @@
 ==========================================
+MessageUnknown                      0x2000
+==========================================
+
+MsgGetPosition                      0x2000
+
+TODO
+
+MsgGetVelocity                      0x2004
+
+TODO
+
+==========================================
+MessageUnknown                      0x3000
+==========================================
+
+TODO
+
+MsgGoal                             0x300a
+
+TODO
+
+==========================================
 MessageUnknown                      0x4000
 ==========================================
 
@@ -6,6 +28,11 @@ TODO
 
 MsgDamage                           0x4002
 MsgDamageSuccess                    0x4003
+
+TODO
+
+MsgDeactivate                       0x4005
+MsgScore                            0x4006
 
 TODO
 
@@ -174,12 +201,41 @@ MsgFallDownWater                    0x509B
 MsgMultiEnableFrameIn               0x509C
 
 ==========================================
+MessageUnknown                      0x6000
+==========================================
+
+TODO
+
+MsgTakeObject                       0x6005
+
+TODO
+
+==========================================
+MessageUnknown                      0x7000
+TODO: MessageEnemy ??
+==========================================
+
+TODO
+
+MsgEnemyShotKill                    0x7002
+
+TODO
+
+MsgFerrisWheelNotifyRotateGondola   0x70A0
+
+TODO
+
+==========================================
 MessageUnknown                      0x8000
 ==========================================
 
 TODO
 
 MsgSetDebugCamera                   0x8003
+
+TODO
+
+MsgPushCameraController             0x8005
 
 TODO
 
@@ -193,6 +249,7 @@ MessageUnknown                      0xC000
 
 TODO
 
+MsgHudLockonCursorUpdate            0xC007
 MsgHudLockonCursorFinish            0xC008
 
 TODO
