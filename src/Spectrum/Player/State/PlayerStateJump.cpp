@@ -9,30 +9,30 @@
 #include <Player/State/PlayerStateUtilVisual.h> // TODO: REMOVE THIS
 #include <Player/Base/PlayerPhysicalBehavior.h>
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-void CSpectrumStateJump::OnEnter(CStateGOC& goc, int param_2)
+void CStateJump::OnEnter(CStateGOC& goc, int param_2)
 {
-    StateUtil::SpectrumRequestWaterGravityChange(goc);
-    goc.ChangePosture<CPostureAir>();
+    StateUtil::RequestWaterGravityChange(goc);
+    goc.ChangePosture<app::Player::CPostureAir>(); // TODO
     goc.ChangeAnimation("JUMP_START", 0.2f);
-    StateUtil::EnableHoming(goc, true);
+    app::Player::StateUtil::EnableHoming(goc, true);
 
     DoJump(goc);
 
     m_ballJumpTimer = 0.0f;
     GotoSeq(0);
-    StateUtil::PlaySE(goc, "sn_jump");
+    app::Player::StateUtil::PlaySE(goc, "sn_jump");
 }
 
-void CSpectrumStateJump::OnLeave(CStateGOC& goc, int param_2)
+void CStateJump::OnLeave(CStateGOC& goc, int param_2)
 {
-    StateUtil::EnableHoming(goc, false);
+    app::Player::StateUtil::EnableHoming(goc, false);
 }
 
-bool CSpectrumStateJump::Step(CStateGOC& goc, float dt)
+bool CStateJump::Step(CStateGOC& goc, float dt)
 {
     const auto physics = goc.GetPhysics();
     m_ballJumpTimer += dt;
@@ -40,16 +40,16 @@ bool CSpectrumStateJump::Step(CStateGOC& goc, float dt)
     switch (m_curSeq)
     {
     case 0:
-        if (StateUtil::IsButtonUp(goc, game::INPUT_BUTTON_JUMP))
+        if (app::Player::StateUtil::IsButtonUp(goc, app::game::INPUT_BUTTON_JUMP))
         {
             FUN_80097a04(goc);
             GotoSeq(1);
         }
-        else if (SPECTRUM_PLAYER_PARAMETER_JUMP_BALL_TIMER <= m_ballJumpTimer)
+        else if (m_ballJumpTimer >= goc.GetParameter(Param::JUMP_BALL_TIMER))
         {
             // TODO
 
-            goc.ChangeState(SPECTRUM_PLAYER_STATE_BALL_JUMP);
+            goc.ChangeState(PLAYER_STATE_BALL_JUMP);
             return true;
         }
 
@@ -75,4 +75,4 @@ bool CSpectrumStateJump::Step(CStateGOC& goc, float dt)
     return CheckChangeState(goc, true, false);
 }
 } // Player
-} // app
+} // Sonic

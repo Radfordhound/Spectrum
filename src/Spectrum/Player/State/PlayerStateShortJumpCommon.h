@@ -2,11 +2,11 @@
 #include "PlayerStateJumpCommon.h"
 #include <csl/math/vector3.h>
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-class CSpectrumStateShortJumpCommon : public CSpectrumStateJumpCommon
+class CStateShortJumpCommon : public CStateJumpCommon
 {
 protected:
     csl::math::Vector3 field_0x24_spectrum;
@@ -19,4 +19,4 @@ public:
     void DoJump(CStateGOC& goc);
 };
 } // Player
-} // app
+} // Sonic

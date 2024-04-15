@@ -1,3 +1,13 @@
 #include "pch.h"
+#include "PlayerStatePhantomPuzzleRoot.h"
 
-// TODO
+namespace Sonic
+{
+namespace Player
+{
+void CStatePhantomPuzzleRoot::OnEnter(CStateGOC& goc, int param_2)
+{
+    // TODO
+}
+} // Player
+} // Sonic

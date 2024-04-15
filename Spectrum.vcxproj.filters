@@ -53,6 +53,15 @@
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateUtil.h">
       <Filter>Player\State</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateBase.h">
+      <Filter>Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\Base\PlayerPhysicalBehavior.h">
+      <Filter>Player\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\Base\PlayerPosture.h">
+      <Filter>Player\Base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
@@ -110,6 +119,12 @@
     </ClCompile>
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateUtil.cpp">
       <Filter>Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\Parameter\PlayerParameter.cpp">
+      <Filter>Player\Parameter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\Base\PlayerPosture.cpp">
+      <Filter>Player\Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,11 @@
 #pragma once
 #include "PlayerStateShortJumpCommon.h"
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-class CSpectrumStateBallJump : public CSpectrumStateJumpCommon
+class CStateBallJump : public CStateJumpCommon
 {
     float field_0x24_spectrum;
     unsigned char field_0x28_spectrum;
@@ -29,4 +29,4 @@ public:
     void FUN_800985a8(CStateGOC& goc, float dt);
 };
 } // Player
-} // app
+} // Sonic

@@ -1,16 +1,16 @@
 #include "pch.h"
 #include "PlayerStateUtil.h"
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
 namespace StateUtil
 {
-void SpectrumRequestWaterGravityChange(CStateGOC& goc)
+void RequestWaterGravityChange(CStateGOC& goc)
 {
     // TODO
 }
 } // StateUtil
 } // Player
-} // app
+} // Sonic

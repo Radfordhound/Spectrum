@@ -1,11 +1,11 @@
 #pragma once
 #include "PlayerStatePhantomCommon.h"
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-class CSpectrumStatePhantomPuzzleStart : public CSpectrumStatePhantomCommon
+class CStatePhantomPuzzleStart : public CStatePhantomCommon
 {
     float field_0x28_spectrum;
     csl::math::Vector3 field_0x2c_spectrum;
@@ -21,4 +21,4 @@ public:
     void OnEnter(CStateGOC& goc, int param_2);
 };
 } // Player
-} // app
+} // Sonic

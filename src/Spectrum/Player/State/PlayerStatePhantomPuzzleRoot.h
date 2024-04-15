@@ -1,9 +1,15 @@
 #pragma once
+#include "PlayerStatePhantomCommon.h"
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-// TODO
+class CStatePhantomPuzzleRoot : public CStatePhantomCommon
+{
+public:
+    // Colors: 0x8021b240
+    void OnEnter(CStateGOC& goc, int param_2);
+};
 } // Player
-} // app
+} // Sonic

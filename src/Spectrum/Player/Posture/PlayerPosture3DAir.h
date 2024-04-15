@@ -1,12 +1,12 @@
 #pragma once
-#include <Player/Posture/PlayerPostureCommon.h>
+#include "PlayerPostureCommon.h"
 #include <csl/math/vector3.h>
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-class CPosture3DAir : /* TODO: Extend from CPostureAir instead */ public CPostureCommon
+class CPosture3DAir : public CPostureCommon
 {
     int                     m_spectrum_field_0x10;
     csl::math::Vector3      m_spectrum_field_0x14;
@@ -21,21 +21,27 @@ public:
     const char* GetGroupID();
 
     // Colors: 0x8007346c
-    void Calculate(CPhysics& physics, float param_2);
+    void Calculate(CPhysics& physics, float param_2) override;
 
     // Colors: 0x80073464
     void OnEnter(CPhysics& physics);
 
     // TODO: Unknown virtual function 0x8004ac14 ?
 
-    // TODO: Unknown virtual function 0x800737a8 ?
+    // Colors: 0x800737a8
+    virtual void calcInternalForNormal(CPhysics& physics, float deltaTime);
 
+    // Colors: 0x80073980
+    bool FUN_80073980(CPhysics& physics);
+
+    // Colors: 0x80073758
     void SetInternalForceMode(CPhysics& physics, int param_2);
 
+    // Colors: 0x80073568
     void UpdateInternalForce(CPhysics& physics, float deltaTime);
 
     // Colors: 0x800733fc
     CPosture3DAir();
 };
 } // Player
-} // app
+} // Sonic

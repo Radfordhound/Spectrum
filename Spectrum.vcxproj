@@ -19,7 +19,9 @@
     <ClCompile Include="src\Spectrum\Camera\BoostCameraPlugin.cpp" />
     <ClCompile Include="src\Spectrum\Camera\Camera.cpp" />
     <ClCompile Include="src\Spectrum\Camera\Controller\Player3DNormalCamera.cpp" />
+    <ClCompile Include="src\Spectrum\Player\Base\PlayerPosture.cpp" />
     <ClCompile Include="src\Spectrum\Player\Base\PlayerState.cpp" />
+    <ClCompile Include="src\Spectrum\Player\Parameter\PlayerParameter.cpp" />
     <ClCompile Include="src\Spectrum\Player\Posture\PlayerPosture3DAir.cpp" />
     <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureMoveManager.cpp" />
     <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.cpp" />
@@ -39,12 +41,15 @@
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\Spectrum\Camera\BoostCameraPlugin.h" />
     <ClInclude Include="src\Spectrum\Player\Base\PlayerPhantom.h" />
+    <ClInclude Include="src\Spectrum\Player\Base\PlayerPhysicalBehavior.h" />
+    <ClInclude Include="src\Spectrum\Player\Base\PlayerPosture.h" />
     <ClInclude Include="src\Spectrum\Player\Base\PlayerState.h" />
     <ClInclude Include="src\Spectrum\Player\Base\PlayerState.inl" />
     <ClInclude Include="src\Spectrum\Player\Parameter\PlayerParameter.h" />
     <ClInclude Include="src\Spectrum\Player\Posture\PlayerPosture3DAir.h" />
     <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateBallJump.h" />
+    <ClInclude Include="src\Spectrum\Player\State\PlayerStateBase.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateJump.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateJumpCommon.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStatePhantomCommon.h" />
@@ -110,6 +115,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\OpenLW\depends\boost\include;..\OpenLW\Library\cslib\include;..\OpenLW\Library\sonicusa\include;..\OpenLW\Sonic2013\Hedgehog\include;..\OpenLW\Sonic2013\Hedgehog\Extra\include;..\OpenLW\Sonic2010\build\main\src;..\OpenLW\LWAPI\include;..\HookHelpers\include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -136,6 +142,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\OpenLW\depends\boost\include;..\OpenLW\Library\cslib\include;..\OpenLW\Library\sonicusa\include;..\OpenLW\Sonic2013\Hedgehog\include;..\OpenLW\Sonic2013\Hedgehog\Extra\include;..\OpenLW\Sonic2010\build\main\src;..\OpenLW\LWAPI\include;..\HookHelpers\include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

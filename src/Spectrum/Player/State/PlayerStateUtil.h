@@ -1,6 +1,6 @@
 #pragma once
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
@@ -9,7 +9,7 @@ class CStateGOC;
 namespace StateUtil
 {
 // Colors: 0x8020cea0
-void SpectrumRequestWaterGravityChange(CStateGOC& goc);
+void RequestWaterGravityChange(CStateGOC& goc);
 } // StateUtil
 } // Player
-} // app
+} // Sonic

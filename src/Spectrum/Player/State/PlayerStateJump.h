@@ -1,11 +1,11 @@
 #pragma once
 #include "PlayerStateShortJumpCommon.h"
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-class CSpectrumStateJump : public CSpectrumStateShortJumpCommon
+class CStateJump : public CStateShortJumpCommon
 {
     float m_ballJumpTimer;
 
@@ -20,4 +20,4 @@ public:
     bool Step(CStateGOC& goc, float dt);
 };
 } // Player
-} // app
+} // Sonic

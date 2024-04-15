@@ -6,11 +6,11 @@
 
 using namespace csl::math;
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-bool CSpectrumStateShortJumpCommon::FUN_80097a04(CStateGOC& goc)
+bool CStateShortJumpCommon::FUN_80097a04(CStateGOC& goc)
 {
     const auto physics = goc.GetPhysics();
     Vector3 aVStack_30;
@@ -32,7 +32,7 @@ bool CSpectrumStateShortJumpCommon::FUN_80097a04(CStateGOC& goc)
     }
 
     const float dVar5 = std::fmaxf(
-        54.9f, // TODO
+        goc.GetParameter(Param::PARAM_0x11),
         0.3f * dVar4
     );
 
@@ -40,23 +40,22 @@ bool CSpectrumStateShortJumpCommon::FUN_80097a04(CStateGOC& goc)
     return true;
 }
 
-void CSpectrumStateShortJumpCommon::DoJump(CStateGOC& goc)
+void CStateShortJumpCommon::DoJump(CStateGOC& goc)
 {
     const auto physics = goc.GetPhysics();
-    const auto val1 = SPECTRUM_PLAYER_PARAMETER_JUMP_INITIAL; // TODO
 
     physics->upDir = physics->groundInfo.groundNormal;
 
     auto aVStack44 = physics->CalcUpDirectionByVelocity(physics->upDir);
     physics->UpdateGravity(aVStack44, true);
 
-    const auto VStack56 = (aVStack44 * val1);
+    const auto VStack56 = (aVStack44 * goc.GetParameter(Param::JUMP_INITIAL));
     physics->AddVelocity(VStack56);
 
     field_0x24_spectrum = VStack56;
-    StateUtil::ResetOnGround(goc);
+    app::Player::StateUtil::ResetOnGround(goc);
 
     // TODO
 }
 } // Player
-} // app
+} // Sonic

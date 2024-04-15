@@ -1,6 +1,6 @@
 #pragma once
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
@@ -22,4 +22,4 @@ int FUN_800916a4(CStateGOC& goc);
 bool CheckChangeWallJump(CStateGOC& goc);
 } // StateUtil
 } // Player
-} // app
+} // Sonic

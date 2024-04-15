@@ -1,12 +1,10 @@
 #include "pch.h"
 #include "PlayerPosture3DAir.h"
-#include <Player/Base/PlayerPhysicalBehavior.h>
+#include "Spectrum/Player/Parameter/PlayerParameter.h"
+#include "Spectrum/Utility/MathUtility.h"
 #include <Player/Base/PlayerCollision.h>
 
-// TODO: Move these to another header
-#define DEG_TO_RADF(deg) ((deg) * (3.1415927f / 180.0f))
-
-namespace app
+namespace Sonic
 {
 namespace Player
 {
@@ -45,6 +43,38 @@ void CPosture3DAir::OnEnter(CPhysics& physics)
     SetInternalForceMode(physics, 0);
 }
 
+// TODO: Move this function to another file!
+// Colors: 0x8004b0b4
+csl::math::Vector3 FUN_8004b0b4(float param_1, float param_2, void* param_3,
+    CPhysics& physics, const csl::math::Vector3& param_5, int param_6,
+    int param_7, float param_8)
+{
+    // TODO
+    return csl::math::Vector3(0.0f, 0.0f, 0.0f);
+}
+
+void CPosture3DAir::calcInternalForNormal(CPhysics& physics, float deltaTime)
+{
+    const auto VStack_44 = physics.m_inputForce;
+    const auto blackBoard = GetBlackBoard();
+
+    // TODO
+
+    const float dVar4 = std::fmaxf(
+        physics.GetHorzVelocityLength(),
+        physics.GetMaxAirVelocity());
+
+    auto VStack_50 = FUN_8004b0b4(deltaTime, dVar4, this, physics, VStack_44, 0, 0,
+        GetParameter(Param::PARAM_0x41));
+    // TODO
+}
+
+bool CPosture3DAir::FUN_80073980(CPhysics& physics)
+{
+    // TODO
+    return false;
+}
+
 void CPosture3DAir::SetInternalForceMode(CPhysics& physics, int param_2)
 {
     m_spectrum_field_0x10 = param_2;
@@ -60,7 +90,8 @@ void CPosture3DAir::UpdateInternalForce(CPhysics& physics, float deltaTime)
 {
     if (m_spectrum_field_0x10 == 0)
     {
-        // TODO
+        calcInternalForNormal(physics, deltaTime); // TODO
+
         if (true && // TODO
             0.1f < physics.GetHorzVelocityLength())
         {
@@ -68,7 +99,7 @@ void CPosture3DAir::UpdateInternalForce(CPhysics& physics, float deltaTime)
         }
     }
     else if (m_spectrum_field_0x10 == 1 &&
-        true) // TODO
+        !FUN_80073980(physics))
     {
         SetInternalForceMode(physics, 0);
     }
@@ -128,4 +159,4 @@ static void CPosture3DAir_InstallHooks()
 
 LWAPI_DEFINE_PATCH(CPosture3DAir_InstallHooks)
 } // Player
-} // app
+} // Sonic

@@ -4,18 +4,18 @@
 #include "Spectrum/Player/Base/PlayerState.h"
 #include <Player/State/PlayerStateUtil.h>
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-bool CSpectrumStateJumpCommon::CheckChangeState(CStateGOC& goc, bool allowDoubleJump, bool param_3)
+bool CStateJumpCommon::CheckChangeState(CStateGOC& goc, bool allowDoubleJump, bool param_3)
 {
     const auto nextState = StateUtil::GetRequestStateForAir(goc, 1);
     if (nextState == -1)
     {
         if (!StateUtil::CheckChangeWallJump(goc))
         {
-            if (!allowDoubleJump || !StateUtil::IsEnableDoubleJump(goc, false))
+            if (!allowDoubleJump || !app::Player::StateUtil::IsEnableDoubleJump(goc, false))
             {
                 return false;
             }
@@ -37,4 +37,4 @@ bool CSpectrumStateJumpCommon::CheckChangeState(CStateGOC& goc, bool allowDouble
     return true;
 }
 } // Player
-} // app
+} // Sonic

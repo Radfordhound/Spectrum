@@ -4,7 +4,7 @@
 #include <Player/Base/PlayerState.h>
 #include <Player/Base/PlayerPhysicalBehavior.h>
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
@@ -77,4 +77,4 @@ bool CheckChangeWallJump(CStateGOC& goc)
 }
 } // StateUtil
 } // Player
-} // app
+} // Sonic

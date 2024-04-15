@@ -1,18 +1,18 @@
 #pragma once
+#include "PlayerStateBase.h"
 #include "Spectrum/Player/Base/PlayerPhantom.h"
-#include <Player/State/PlayerStateBase.h>
 
-namespace app
+namespace Sonic
 {
 namespace Player
 {
-class CSpectrumStatePhantomCommon : public CStateActionBase
+class CStatePhantomCommon : public CStateActionBase
 {
 protected:
-    ESpectrumPhantomType m_phantomType;
+    EPhantomType m_phantomType;
 
 public:
     // TODO
 };
 } // Player
-} // app
+} // Sonic
