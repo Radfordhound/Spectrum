@@ -23,6 +23,7 @@
     <ClCompile Include="src\Spectrum\Player\Base\PlayerState.cpp" />
     <ClCompile Include="src\Spectrum\Player\Parameter\PlayerParameter.cpp" />
     <ClCompile Include="src\Spectrum\Player\Posture\PlayerPosture3DAir.cpp" />
+    <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureCommon.cpp" />
     <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureMoveManager.cpp" />
     <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.cpp" />
     <ClCompile Include="src\Spectrum\Player\State\PlayerStateBallJump.cpp" />
@@ -47,6 +48,7 @@
     <ClInclude Include="src\Spectrum\Player\Base\PlayerState.inl" />
     <ClInclude Include="src\Spectrum\Player\Parameter\PlayerParameter.h" />
     <ClInclude Include="src\Spectrum\Player\Posture\PlayerPosture3DAir.h" />
+    <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureCommon.h" />
     <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureQuickStep.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateBallJump.h" />
     <ClInclude Include="src\Spectrum\Player\State\PlayerStateBase.h" />

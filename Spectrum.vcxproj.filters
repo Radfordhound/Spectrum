@@ -62,6 +62,9 @@
     <ClInclude Include="src\Spectrum\Player\Base\PlayerPosture.h">
       <Filter>Player\Base</Filter>
     </ClInclude>
+    <ClInclude Include="src\Spectrum\Player\Posture\PlayerPostureCommon.h">
+      <Filter>Player\Posture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
@@ -125,6 +128,9 @@
     </ClCompile>
     <ClCompile Include="src\Spectrum\Player\Base\PlayerPosture.cpp">
       <Filter>Player\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Spectrum\Player\Posture\PlayerPostureCommon.cpp">
+      <Filter>Player\Posture</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
